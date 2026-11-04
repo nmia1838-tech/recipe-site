@@ -1,0 +1,53 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: Arial, helvetica, sans-serif;
+   background-color: #f4f4f4;
+}
+
+#mypopover {
+ border: none;
+ padding: 20px;
+ max-width: 250px;
+}
+
+button.icon {
+background: none;
+border: none;
+cursor: pointer;
+position: absolute;
+top: 16px;
+right: 16px;
+}
+
+#mypopover::backdrop{
+    background-color: rgb(223, 20, 223);
+}
+
+#mypopover h3 {
+    margin:0 0 10px 0;
+}
+
+#mypopover p {
+    color: 666;
+}
+
+#mypopover button.primary {
+    width: 100%;
+}
+
+button.primary{
+    background-color: rgb(128, 59, 192);
+    padding: 10px 20px;
+    border-radius: none;
+    color: #f4f4f4;
+    transition: 0,3s;
+}
+
+button.primay:hover{
+background-color: blueviolet;
+}

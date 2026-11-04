@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <button class="primary" popovertarget="mypopover">Open Popover</button>
+
+        <dialog id="mypopover" popover="auto">
+            <button popovertarget="mypopover" class="icon" popovertargetaction="hide">
+                x
+            </button>
+            <h3>Popover Title</h3>
+            <p>This is the content of the popover. You can put any HTML content here, such as text, images, or forms.</p>
+            <button class="primary" popovertarget="mypopover" popovertargetaction="hide">Close</button>
+        </dialog>
+
+    </div>
+    
+</body>
+</html>
