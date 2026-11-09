@@ -916,7 +916,7 @@ button:hover {
 
     object-fit: cover;
 
-    border-radius: 50%;
+    border-radius: 0%;
 }
 
 
@@ -1051,3 +1051,215 @@ button:hover {
 }
 
 /*rvd */
+
+/*search*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #111111;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 43px 62px;
+}
+
+/* TOP SECTION */
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    min-height: 303px;
+}
+
+.search-box {
+    width: 414px;
+    padding-top: 27px;
+}
+
+.search-box h1 {
+    font-size: 27px;
+    font-weight: 400;
+    margin: 0 0 14px;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.search-input span {
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.search-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+.search-input input::placeholder {
+    color: white;
+}
+
+.search-box p {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+/* FILTER BOX */
+
+.filter-box {
+    width: 740px;
+    min-height: 246px;
+    background: linear-gradient(
+        110deg, #252525, #151515
+    );
+    border-radius: 6px;
+    padding: 27px 22px;
+}
+
+.filter-box h2 {
+    font-size: 27px;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.category-column {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.category-column label {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.category-column input {
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border: 2px solid #eeeeee;
+    border-radius: 50%;
+    margin: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.category-column input:checked {
+    border: 8px solid #d86a2c;
+    background-color: white;
+}
+
+/* DIVIDER */
+
+hr {
+    border: none;
+    border-top: 1px solid #333333;
+    margin: 0;
+}
+
+/* SEARCH RESULTS */
+
+.results {
+    max-width: 1050px;
+    margin: 64px auto;
+}
+
+.result {
+    border-bottom: 1px solid #333333;
+    padding-bottom: 52px;
+    margin-bottom: 50px;
+}
+
+.category {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 14px;
+    padding-left: 8px;
+}
+
+.seafood {
+    border-left: 3px solid #5544ff;
+}
+
+.seafood span {
+    color: #5544ff;
+}
+
+.chicken {
+    border-left: 3px solid #20a99d;
+}
+
+.chicken span {
+    color: #20a99d;
+}
+
+.result h2 {
+    color: #c45b22;
+    font-size: 24px;
+    margin: 0 0 15px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* SMALL SCREENS */
+
+@media (max-width: 800px) {
+    .container {
+        padding: 25px;
+    }
+
+    .top-section {
+        flex-direction: column;
+        gap: 25px;
+        padding-bottom: 40px;
+    }
+
+    .search-box,
+    .filter-box {
+        width: 100%;
+    }
+
+    .categories {
+        gap: 15px;
+    }
+
+    .category-column label {
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    .results {
+        margin-top: 40px;
+    }
+}
