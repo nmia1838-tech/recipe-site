@@ -1372,7 +1372,7 @@ button:hover {
 
 /* MOBIL */
 
-@media (width <= 768px) {
+@media (width <= 780px) {
 
     :root {
         --width-12col: 100%;
@@ -1473,21 +1473,20 @@ button:hover {
     display: none;
 }
 
-}
 
 
 
 .menu-container{
-  display: none;
+    display: none;
 }
 
 .hamburgermenu{
-  display: block;
+    display: block;
 }
 
 .mobile-menu{
     display: block;
- position: fixed;
+    position: fixed;
     top: 0;
     right: 0;
     height: 100%;
@@ -1503,7 +1502,7 @@ button:hover {
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
-     transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
 }
 
 .mobile-menu ul{
@@ -1529,34 +1528,35 @@ button:hover {
 }
 
 .todays_recipes_content {
-        grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
-    .recipe-container {
-        margin-top: 70px;
-    }
+.recipe-container {
+    margin-top: 70px;
+}
 
-    .recipe-top {
-        grid-template-columns: 1fr;
-    }
+.recipe-top {
+    grid-template-columns: 1fr;
+}
 
-    .recipe-image {
-        grid-row: 1;
-    }
+.recipe-image {
+    grid-row: 1;
+}
 
-    .recipe-details {
-        flex-direction: column;
-        gap: 20px;
+.recipe-details {
+    flex-direction: column;
+    gap: 20px;
+    
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
+.ingredient-columns {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
 
-    .ingredient-columns {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
-    .instructions h2 {
-        font-size: 30px;
-    }
+.instructions h2 {
+    font-size: 30px;
+}
+}
