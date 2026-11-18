@@ -1050,47 +1050,129 @@ button:hover {
     }
 }
 
-/*rvd */
+/*bonus*/
 
-/*search*/
-* {
-    box-sizing: border-box;
-}
 
-body {
-    margin: 0;
+.bonus {
     background-color: #111111;
     color: #eeeeee;
     font-family: Arial, sans-serif;
+    padding: 40px;
+    width: 100%;
 }
 
-.container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 43px 62px;
+.bonus * {
+    box-sizing: border-box;
 }
 
-/* TOP SECTION */
+/* OVERSKRIFTER */
 
-.top-section {
+.bonus .bonus-overskrifter {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    border-bottom: 2px solid #aaaaaa;
+    padding-bottom: 10px;
+}
+
+.bonus .bonus-overskrifter h1 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+    color: #eeeeee;
+}
+
+/* TO KOLONNER */
+
+.bonus .bonus-indhold {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding-top: 45px;
+}
+
+/* INSTRUCTIONS */
+
+.bonus .bonus-trin {
+    padding-right: 80px;
+}
+
+.bonus .bonus-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    margin-bottom: 30px;
+}
+
+/* ORANGE STEP-TEKST */
+
+.bonus .bonus-step span {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #d65a1b;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    white-space: nowrap;
+}
+
+/* TEKST VED TRIN */
+
+.bonus .bonus-step p {
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0;
+    max-width: 580px;
+}
+
+/* INGREDIENSER */
+
+.bonus .bonus-ingredienser {
+    padding-left: 0;
+}
+
+.bonus .bonus-ingredienser p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+
+.madunivers {
+    background-color: #111111;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+    padding: 37px 4%;
+    min-height: 100vh;
+}
+
+.madunivers * {
+    box-sizing: border-box;
+}
+
+/* ØVERSTE DEL */
+
+.madunivers .madunivers-top {
     display: flex;
     justify-content: space-between;
     gap: 60px;
     min-height: 303px;
 }
 
-.search-box {
+/* SØGEFELT */
+
+.madunivers .madunivers-sogning {
     width: 414px;
+    max-width: 100%;
     padding-top: 27px;
 }
 
-.search-box h1 {
+.madunivers .madunivers-sogning h1 {
     font-size: 27px;
-    font-weight: 400;
+    font-weight: normal;
     margin: 0 0 14px;
+    color: white;
 }
 
-.search-input {
+.madunivers .madunivers-sogefelt {
     display: flex;
     align-items: center;
     height: 45px;
@@ -1099,12 +1181,12 @@ body {
     padding: 0 15px;
 }
 
-.search-input span {
+.madunivers .madunivers-sogefelt span {
     font-size: 25px;
     margin-right: 25px;
 }
 
-.search-input input {
+.madunivers .madunivers-sogefelt input {
     background: transparent;
     border: none;
     outline: none;
@@ -1113,46 +1195,50 @@ body {
     width: 100%;
 }
 
-.search-input input::placeholder {
+.madunivers .madunivers-sogefelt input::placeholder {
     color: white;
 }
 
-.search-box p {
+.madunivers .madunivers-sogning p {
     font-size: 14px;
     margin-top: 12px;
 }
 
-/* FILTER BOX */
+/* FILTERBOKS */
 
-.filter-box {
+.madunivers .madunivers-filter {
     width: 740px;
-    min-height: 246px;
+    max-width: 100%;
     background: linear-gradient(
         110deg, #252525, #151515
     );
     border-radius: 6px;
     padding: 27px 22px;
+    align-self: flex-start;
 }
 
-.filter-box h2 {
+.madunivers .madunivers-filter h2 {
     font-size: 27px;
-    font-weight: 400;
+    font-weight: normal;
     margin: 0 0 20px;
+    color: white;
 }
 
-.categories {
+/* KATEGORIER */
+
+.madunivers .madunivers-kategorier {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 45px;
 }
 
-.category-column {
+.madunivers .madunivers-kolonne {
     display: flex;
     flex-direction: column;
     gap: 11px;
 }
 
-.category-column label {
+.madunivers .madunivers-kolonne label {
     display: flex;
     align-items: center;
     gap: 22px;
@@ -1160,7 +1246,7 @@ body {
     cursor: pointer;
 }
 
-.category-column input {
+.madunivers .madunivers-kolonne input {
     appearance: none;
     width: 28px;
     height: 28px;
@@ -1171,66 +1257,151 @@ body {
     flex-shrink: 0;
 }
 
-.category-column input:checked {
+.madunivers .madunivers-kolonne input:checked {
     border: 8px solid #d86a2c;
     background-color: white;
 }
 
-/* DIVIDER */
+/* STREG */
 
-hr {
+.madunivers .madunivers-streg {
     border: none;
     border-top: 1px solid #333333;
     margin: 0;
 }
 
-/* SEARCH RESULTS */
+/* RESULTATER */
 
-.results {
+.madunivers .madunivers-resultater {
     max-width: 1050px;
     margin: 64px auto;
 }
 
-.result {
+.madunivers .madunivers-resultat {
     border-bottom: 1px solid #333333;
     padding-bottom: 52px;
     margin-bottom: 50px;
 }
 
-.category {
+.madunivers .madunivers-kategori {
     font-size: 16px;
     font-weight: bold;
     margin: 0 0 14px;
     padding-left: 8px;
 }
 
-.seafood {
+/* BLÅ KATEGORI */
+
+.madunivers .madunivers-bla {
     border-left: 3px solid #5544ff;
 }
 
-.seafood span {
+.madunivers .madunivers-bla span {
     color: #5544ff;
 }
 
-.chicken {
+/* GRØN KATEGORI */
+
+.madunivers .madunivers-gron {
     border-left: 3px solid #20a99d;
 }
 
-.chicken span {
+.madunivers .madunivers-gron span {
     color: #20a99d;
 }
 
-.result h2 {
+/* ORANGE OVERSKRIFTER */
+
+.madunivers .madunivers-resultat h2 {
     color: #c45b22;
     font-size: 24px;
     margin: 0 0 15px;
 }
 
-.description {
+/* BESKRIVELSE */
+
+.madunivers .madunivers-beskrivelse {
     font-size: 18px;
     line-height: 1.3;
     margin: 0;
 }
+
+.madunivers {
+    padding-top: 130px;
+}
+
+/*about us*/
+
+
+.madbanden {
+    background-color: #111111;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 150px 8% 80px;
+}
+
+.madbanden * {
+    box-sizing: border-box;
+}
+
+/* OVERSKRIFT */
+
+.madbanden .madbanden-intro {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.madbanden .madbanden-intro h1 {
+    font-size: 48px;
+    color: #c45b22;
+    margin-bottom: 20px;
+}
+
+.madbanden .madbanden-intro p {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: auto;
+}
+
+/* INDHOLD */
+
+.madbanden .madbanden-indhold {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* BOKSE */
+
+.madbanden .madbanden-boks {
+    background: linear-gradient(
+        110deg, #252525, #171717
+    );
+    border-radius: 8px;
+    padding: 35px;
+    width: 300px;
+    flex-grow: 1;
+    max-width: 380px;
+}
+
+.madbanden .madbanden-boks h2 {
+    color: #c45b22;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.madbanden .madbanden-boks p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #eeeeee;
+}
+
+
+
+
 
 /* SMALL SCREENS */
 

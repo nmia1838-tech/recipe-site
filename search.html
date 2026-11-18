@@ -28,98 +28,124 @@
             </div>
         </nav>
 
+
+
         <!--hero section-->
+      
+<section class="madunivers">
 
+  <div class="madunivers-top">
 
+    <!-- SØGEFELT -->
+    <div class="madunivers-sogning">
+      <h1>FULL SEARCH</h1>
 
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Search</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+      <div class="madunivers-sogefelt">
+        <span>&#9906;</span>
+        <input type="search" placeholder="Search">
+      </div>
 
-    <main class="container">
+      <p>Let's go already!</p>
+    </div>
 
-        <section class="top-section">
+    <!-- KATEGORIER -->
+    <div class="madunivers-filter">
+      <h2>Search filter : category</h2>
 
-            <div class="search-box">
-                <h1>FULL SEARCH</h1>
+      <div class="madunivers-kategorier">
 
-                <div class="search-input">
-                    <span>&#9906;</span>
-                    <input type="search" placeholder="Search">
-                </div>
+        <div class="madunivers-kolonne">
+          <label>
+            <input type="radio" name="madkategori">
+            Seafood
+          </label>
 
-                <p>Let's go already!</p>
-            </div>
+          <label>
+            <input type="radio" name="madkategori" checked>
+            Beef/Pork
+          </label>
 
-            <div class="filter-box">
-                <h2>Search filter : category</h2>
+          <label>
+            <input type="radio" name="madkategori">
+            Chicken
+          </label>
 
-                <div class="categories">
-                    <div class="category-column">
-                        <label><input type="radio" name="category"> Seafood</label>
-                        <label><input type="radio" name="category" checked> Beef/Pork</label>
-                        <label><input type="radio" name="category"> Chicken</label>
-                        <label><input type="radio" name="category"> Snacks</label>
-                    </div>
+          <label>
+            <input type="radio" name="madkategori">
+            Snacks
+          </label>
+        </div>
 
-                    <div class="category-column">
-                        <label><input type="radio" name="category"> Pasta</label>
-                        <label><input type="radio" name="category"> Vegetarian</label>
-                        <label><input type="radio" name="category"> Dessert</label>
-                    </div>
-                </div>
-            </div>
+        <div class="madunivers-kolonne">
+          <label>
+            <input type="radio" name="madkategori">
+            Pasta
+          </label>
 
-        </section>
+          <label>
+            <input type="radio" name="madkategori">
+            Vegetarian
+          </label>
 
-        <hr>
+          <label>
+            <input type="radio" name="madkategori">
+            Dessert
+          </label>
+        </div>
 
-        <section class="results">
+      </div>
+    </div>
+  </div>
 
-            <article class="result">
-                <p class="category seafood">
-                    Category: <span>SEAFOOD</span>
-                </p>
+  <hr class="madunivers-streg">
 
-                <h2>SEARCH RESULT ONE</h2>
+  <!-- SØGERESULTATER -->
+  <div class="madunivers-resultater">
 
-                <p class="description">
-                    This will be the excerpt from WordPress, and you can
-                    control several things here. Like the length of the
-                    text that is shown and multiple other things.
-                    Now I just writing stuff to fill it out, and
-                    the final three dots indicate there is more text ...
-                </p>
-            </article>
+    <article class="madunivers-resultat">
 
-            <article class="result">
-                <p class="category chicken">
-                    Category: <span>CHICKEN</span>
-                </p>
+      <p class="madunivers-kategori madunivers-bla">
+        Category: <span>SEAFOOD</span>
+      </p>
 
-                <h2>SEARCH RESULT TWO</h2>
+      <h2>SEARCH RESULT ONE</h2>
 
-                <p class="description">
-                    This will be the excerpt from WordPress, and you can
-                    control several things here. Like the length of the
-                    text that is shown and multiple other things.
-                    Now I just writing stuff to fill it out, and
-                    the final three dots indicate there is more text ...
-                </p>
-            </article>
+      <p class="madunivers-beskrivelse">
+        This will be the excerpt from WordPress,
+        and you can control several things here.
+        Like the length of the text that is shown
+        and multiple other things. Now I just
+        writing stuff to fill it out, and the
+        final three dots indicate there is more
+        text ...
+      </p>
 
-        </section>
+    </article>
 
-    </main>
+    <article class="madunivers-resultat">
 
-</body>
-</html>
+      <p class="madunivers-kategori madunivers-gron">
+        Category: <span>CHICKEN</span>
+      </p>
+
+      <h2>SEARCH RESULT TWO</h2>
+
+      <p class="madunivers-beskrivelse">
+        This will be the excerpt from WordPress,
+        and you can control several things here.
+        Like the length of the text that is shown
+        and multiple other things. Now I just
+        writing stuff to fill it out, and the
+        final three dots indicate there is more
+        text ...
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
          <!-- FOOTER -->
     <footer class="footer">
 
